@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 /**
- * Oauth2 资源服务配置类
+ * OAuth2 资源服务配置类
  *
  * @author liujun
  * @create 2023-02-10 11:13:12

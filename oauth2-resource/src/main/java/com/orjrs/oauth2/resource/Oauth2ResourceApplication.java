@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Oauth2 资源服务
+ * OAuth2 资源服务
  *
  * @author liujun
  * @create 2023-02-10 11:13:12

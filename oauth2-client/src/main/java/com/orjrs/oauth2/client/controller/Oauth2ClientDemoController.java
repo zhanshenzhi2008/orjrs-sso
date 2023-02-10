@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Oauth2 客户端控制类
+ * OAuth2 客户端控制类
  *
  * @author liujun
  * @create 2023-02-10 10:40:23
