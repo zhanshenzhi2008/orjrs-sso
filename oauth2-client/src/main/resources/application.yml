@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 9001
   servlet:
     session:
       cookie:
@@ -31,14 +31,14 @@ spring:
             client-name: orjrs-client-id2
         provider:
           orjrs-client-id:
-            authorization-uri: http://127.0.0.1:8080/oauth2/authorize
-            token-uri: http://127.0.0.1:8080/oauth2/token
-            user-info-uri: http://127.0.0.1:8082/user/info
+            authorization-uri: http://127.0.0.1:9000/oauth2/authorize
+            token-uri: http://127.0.0.1:9000/oauth2/token
+            user-info-uri: http://127.0.0.1:9002/user/info
             user-name-attribute: name
-            jwk-set-uri: http://127.0.0.1:8080/oauth2/jwks
+            jwk-set-uri: http://127.0.0.1:9000/oauth2/jwks
           orjrs-client-id2:
-            authorization-uri: http://127.0.0.1:8080/oauth2/authorize
-            token-uri: http://127.0.0.1:8080/oauth2/token
-            user-info-uri: http://127.0.0.1:8082/user/info
+            authorization-uri: http://127.0.0.1:9000/oauth2/authorize
+            token-uri: http://127.0.0.1:9000/oauth2/token
+            user-info-uri: http://127.0.0.1:9002/user/info
             user-name-attribute: name
-            jwk-set-uri: http://127.0.0.1:8080/oauth2/jwks
+            jwk-set-uri: http://127.0.0.1:9000/oauth2/jwks
