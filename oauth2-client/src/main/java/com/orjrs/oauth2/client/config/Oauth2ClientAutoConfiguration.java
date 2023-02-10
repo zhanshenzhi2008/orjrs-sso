@@ -7,7 +7,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
 /**
- * Oauth2 客户端配置类
+ * OAuth2 客户端配置类
  *
  * @author liujun
  * @create 2023-02-10 10:40:23

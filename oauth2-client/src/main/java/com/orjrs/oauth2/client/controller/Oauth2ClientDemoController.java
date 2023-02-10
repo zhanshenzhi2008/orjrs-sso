@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-public class OauthClientDemoController {
+public class Oauth2ClientDemoController {
 
     @RequestMapping(path = "/hello")
     public String demo() {
