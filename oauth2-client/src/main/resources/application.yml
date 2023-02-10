@@ -1,0 +1,44 @@
+server:
+  port: 8081
+  servlet:
+    session:
+      cookie:
+        # 需要更换存放sessionId的cookie名字，否则认证服务和客户端的sessionId会相互覆盖
+        name: JSESSIONID-2
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          client-id-1:
+            provider: orjrs-client-id
+            client-id: orjrs-client-id
+            client-secret: orjrs-client-secret
+            authorization-grant-type: authorization_code
+            redirect-uri: '{baseUrl}/{action}/oauth2/code/{registrationId}'
+            #client-authentication-method: POST
+            scope: user_info, pull_requests
+            client-name: orjrs-client-id
+          client-id-2:
+            provider: orjrs-client-id2
+            client-id: orjrs-client-id
+            client-secret: orjrs-client-secret
+            authorization-grant-type: authorization_code
+            redirect-uri: '{baseUrl}/{action}/oauth2/code/{registrationId}'
+            #client-authentication-method: POST
+            scope: user_info, pull_requests
+            client-name: orjrs-client-id2
+        provider:
+          orjrs-client-id:
+            authorization-uri: http://127.0.0.1:8080/oauth2/authorize
+            token-uri: http://127.0.0.1:8080/oauth2/token
+            user-info-uri: http://127.0.0.1:8082/user/info
+            user-name-attribute: name
+            jwk-set-uri: http://127.0.0.1:8080/oauth2/jwks
+          orjrs-client-id2:
+            authorization-uri: http://127.0.0.1:8080/oauth2/authorize
+            token-uri: http://127.0.0.1:8080/oauth2/token
+            user-info-uri: http://127.0.0.1:8082/user/info
+            user-name-attribute: name
+            jwk-set-uri: http://127.0.0.1:8080/oauth2/jwks
